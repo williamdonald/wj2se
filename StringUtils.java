@@ -67,16 +67,10 @@ Recursive way is almost 4-5 times slower.
 	        charArray[len] ^= charArray[i];
 	        charArray[i] ^= charArray[len];
 	    }
-	    /*
-And voila, we now have x1 = 111 and x2 = 100.
-and for each pair in array we do this because string chars are in essence binary values :)))
-This method is also the quickest way to reverse a string.
-Recursive way is almost 4-5 times slower.
-	     */
 	    return new String(charArray);
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(StringUtils.reverseStrUsingXOR("abcde"));
+		//System.out.println(StringUtils.reverseStrUsingXOR("abcde"));
 	}
 }
