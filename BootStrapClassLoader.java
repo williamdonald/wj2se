@@ -25,7 +25,7 @@ public class BootStrapClassLoader {
 	  *     <tr>
 	  *       <td>extension</td>
 	  *       <td>JAVA_HOME/jre/ext/lib</td>
-	  *       <td>null</td>
+	  *       <td><b>sun.misc.Launcher$ExtClassLoader</b></td>
 	  *     </tr>
 	  *     <tr>
 	  *       <td>application</td>
