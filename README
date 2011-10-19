@@ -1,2 +1,21 @@
-#first project for j2se tech
-2010.9.14
+  static Node reverse(Node head,Node pre){
+		Node next = head.next;
+		head.next = pre;
+		if(next!=null){
+			head = reverse(next,head);
+		}
+		return head;
+	}
+	
+	static Node reverseIterative(Node head){
+		Node pre = null;
+		Node next = null;
+		while(head!=null){
+			next = head.next;
+			head.next = pre;
+			pre = head;
+			head = next;
+		}
+		
+		return pre;
+	}
