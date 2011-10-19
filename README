@@ -6,6 +6,21 @@
 		}
 		return head;
 	}
+
+	static Node reverse2(Node head,Node pre){
+		//DONE Parts: pre
+		//TODO Point : head
+		//save for next state
+		Node next = head.next;
+		head.next = pre;
+		pre = head;
+		head = next;
+		if(head!=null){
+			
+			pre = reverse(head,pre);
+		}
+		return pre;
+	}
 	
 	static Node reverseIterative(Node head){
 		Node pre = null;
