@@ -12,9 +12,10 @@
 		if(head == null){
 			return pre;
 		}
-		
+		//for next phase.
 		Node next = head.next;
 		System.out.println("link from [ "+head.value + "] to ["+(pre==null?"null":pre.value)+"]");
+		//Do reverse.
 		head.next = pre;
 		
 		return reverseByRecursive(head, next);
